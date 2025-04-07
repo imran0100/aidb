@@ -20,7 +20,6 @@ async function runGenerateSQLQuery(query: string) {
   // Check if the query is a SELECT statement (and prevent harmful queries)
   if (
     !query.trim().toLowerCase().startsWith("select") ||
-    !query.trim().toLowerCase().startsWith("show") ||
 
     query.trim().toLowerCase().includes("drop") ||
     query.trim().toLowerCase().includes("delete") ||
