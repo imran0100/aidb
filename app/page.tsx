@@ -1,7 +1,7 @@
 'use client';
 
 import { useChat } from '@ai-sdk/react';
-import {marked} from 'marked'
+
 export default function Page() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 console.log(messages,"messages");
